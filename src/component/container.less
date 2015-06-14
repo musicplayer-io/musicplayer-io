@@ -1,0 +1,115 @@
+.ui.container {
+	display: flex;
+	background: @col_bg;
+
+	&.transparent {
+		background: transparent;
+	}
+
+	.aligned;
+
+	&.center {
+		justify-content: center;
+	}
+	&.left {
+		justify-content: flex-start;
+	}
+	&.right {
+		justify-content: flex-end;
+	}
+	&.spaced {
+		&.around {
+			justify-content: space-around;
+		}
+		&.between {
+			justify-content: space-between;	
+		}
+	}
+
+	&.middle {
+		align-items: center;
+	}
+	&.top {
+		align-items: flex-start;
+	}
+	&.bottom {
+		align-items: flex-end;
+	}
+
+
+	&.columns {
+		flex-direction: column;
+		&.middle {
+			justify-content: center;
+		}
+		&.top {
+			justify-content: flex-start;
+		}
+		&.bottom {
+			justify-content: flex-end;
+		}
+		&.center {
+			align-items: center;
+		}
+		&.left {
+			align-items: flex-start;
+		}
+		&.right {
+			align-items: flex-end;
+		}
+	}
+
+	&.full {
+		height: 100%;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		left: 0px;
+	}
+
+	padding: 10px;
+	&.compact {
+		padding: 0px;
+	}
+	&.padded {
+		padding: 20px;
+	}
+
+	> .content {
+		.size;
+		.aligned;
+
+		&.top {
+			align-self: flex-start;
+		}
+		&.bottom {
+			align-self: flex-end;
+		}
+		padding: 10px;
+		&.compact {
+			padding: 0px;
+		}
+		&.padded {
+			padding: 20px;
+		}
+
+		&.primary {
+			background: @col_primary;
+			color: @col_fg;
+		}
+	}
+
+	&.dark {
+		background: @col_fg;
+		color: @col_bg;
+		&.blue {
+			background: #111E2C;
+		}
+		&.purple {
+			background: #460B5F;
+		}
+		&.green {
+			background: #460B5F;
+		}
+	}
+}

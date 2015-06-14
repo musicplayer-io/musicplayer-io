@@ -1,0 +1,33 @@
+{
+  "name": "musicplayer-io",
+  "version": "1.0.0",
+  "description": "Website for musicplayer.io",
+  "main": "markade.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musicplayer-io/musicplayer-io.git"
+  },
+  "author": "Ilias Ismanalijev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/musicplayer-io/musicplayer-io/issues"
+  },
+  "homepage": "https://github.com/musicplayer-io/musicplayer-io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-batch": "^1.0.5",
+    "gulp-jade": "^1.0.1",
+    "gulp-less": "^3.0.3",
+    "gulp-livereload": "^3.8.0",
+    "gulp-minify-css": "^1.1.6",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.1.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-watch": "^4.2.4"
+  }
+}

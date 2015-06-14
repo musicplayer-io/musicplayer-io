@@ -1,0 +1,14 @@
+extend layout
+
+block content
+  .ui.container.columns.center.middle.full.dark#container
+    +background-gradient-image("container", $.image)
+    mixin app(obj)
+      a.content.center.aligned(href=obj.meta.url)
+        .ui.text.larger.light #{obj.meta.title}
+        .ui.text.light !{obj.html}
+        hr.dashed.light
+        +stars(markade.apps[obj.meta.app])
+
+
+    +app($$.redditmusicplayer)

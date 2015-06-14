@@ -1,0 +1,13 @@
+doctype html
+html
+  head(lang="en")
+    include _includes/_mixins
+    title #{$.title} | #{markade.name}
+    meta(http-equiv="content-type", content="text/html; charset=UTF-8")
+    meta(name="description", content=$.description)
+    meta(name="keywords", content=$.keywords)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
+    include _includes/_favicon
+    link(rel="stylesheet", href="/css/style.css", type="text/css")
+  body
+    block content
