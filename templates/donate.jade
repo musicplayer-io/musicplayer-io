@@ -1,0 +1,13 @@
+extend layout
+
+block content
+  .ui.container.columns.center.middle.full.dark#container
+    +background-gradient-image("container", $.image)
+    .content.center.aligned 
+        p Due to popular demand, you can donate
+    | !{html}
+
+    .content.center.aligned
+        a(href="https://github.com/musicplayer-io/redditmusicplayer") GitHub 
+        |  - 
+        a(href="https://www.reddit.com/r/musicplayer") /r/musicplayer
