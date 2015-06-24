@@ -17,15 +17,22 @@ html
             i.icon.music
             | Music Player
         .right.menu
-          a.item.icon(href="https://twitter.com/musicplayer_io", target="_blank")
+          a.item.pop.icon(href="https://twitter.com/musicplayer_io", target="_blank", title="Follow @musicplayer_io")
             i.icon.twitter
-          a.item.icon(href="https://facebook.com/musicplayer.io", target="_blank")
+          a.item.pop.icon(href="https://facebook.com/musicplayer.io", target="_blank", title="Follow on Twitter")
             i.icon.facebook
-          a.item.icon(href="https://github.com/musicplayer-io/", target="_blank")
+          a.item.pop.icon(href="https://github.com/musicplayer-io/", target="_blank", title="Source Code")
             i.icon.github.alternate
-          a.item.icon(href="https://www.reddit.com/r/musicplayer", target="_blank")
+          a.item.pop.icon(href="https://www.reddit.com/r/musicplayer", target="_blank", title="/r/musicplayer on Reddit")
             i.icon.reddit
-          a.item.icon(href="/donate.html")
+          a.item.pop.icon(href="/donate.html", title="Donations")
             i.icon.gift
     .wrap
       block content
+
+    script(src="http://code.jquery.com/jquery-1.11.3.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/semantic.min.js")
+    script.
+      $(document).ready(function() {
+        $(".pop.item").popup();
+      });

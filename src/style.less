@@ -1,9 +1,11 @@
 & { @import 'src/definitions/globals/site'; }
 & { @import 'src/definitions/globals/reset'; }
-& { @import 'src/definitions/globals/reset'; }
 & { @import 'src/definitions/collections/menu'; }
 & { @import 'src/definitions/elements/icon'; }
 & { @import 'src/definitions/elements/divider'; }
+& { @import 'src/definitions/elements/button'; }
+& { @import 'src/definitions/modules/popup'; }
+& { @import 'src/definitions/modules/transition'; }
 
 .wrap {
 	margin-top: 35px;
@@ -50,12 +52,15 @@
 
 .reddit {
 	margin-top: 50px;
+	text-align: center;
 	a {
-		color: inherit;
+		color: rgba(0,0,0,.7);
+		&:hover {
+			color: black;
+		}
 	}
 	.title {
 		display: block;
-		text-align: center;
 		font-weight: 500;
 		padding: 13px;
 		font-size: 48px;

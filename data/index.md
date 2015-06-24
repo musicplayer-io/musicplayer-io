@@ -15,6 +15,7 @@ free <br/>
 @ reddit
 ---
 url: https://reddit.musicplayer.io/
+try: Try It
 ---
 
 @ end

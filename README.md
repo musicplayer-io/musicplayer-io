@@ -11,6 +11,7 @@ $ cd musicplayer-io
 
 // Build CSS
 $ npm install
+$ npm install -g gulp
 $ gulp
 
 // Build HTML
