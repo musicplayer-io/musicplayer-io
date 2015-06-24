@@ -1,10 +1,70 @@
-@import "variables.less";
-@import "mixins.less";
+& { @import 'src/definitions/globals/site'; }
+& { @import 'src/definitions/globals/reset'; }
+& { @import 'src/definitions/globals/reset'; }
+& { @import 'src/definitions/collections/menu'; }
+& { @import 'src/definitions/elements/icon'; }
+& { @import 'src/definitions/elements/divider'; }
 
-@import "reset.less";
-@import "basic.less";
+.wrap {
+	margin-top: 35px;
+}
 
-@import "component/container.less";
-@import "component/text.less";
-@import "component/divider.less";
-@import "component/image.less";
+.contain {
+	max-width: 960px;
+	margin: auto;
+}
+
+.jumbo {
+	padding: 100px 0;
+	color: white;
+	text-align: center;
+
+	p {
+		font-size: 67px;
+		text-align: center;
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: 600;
+
+		.a {
+			font-style: italic;
+			text-transform: lowercase;
+		}
+
+		.andopen {
+			font-size: 45px;
+			font-weight: 300;
+			letter-spacing: 0.08em;
+		}
+
+		.music {
+			font-weight: 600;
+			font-size: 108px;
+			border-bottom: 4px solid;
+			font-size: 72px;
+		}
+
+	}
+
+}
+
+.reddit {
+	margin-top: 50px;
+	a {
+		color: inherit;
+	}
+	.title {
+		display: block;
+		text-align: center;
+		font-weight: 500;
+		padding: 13px;
+		font-size: 48px;
+		text-transform: uppercase;
+		span {
+			font-weight: 300;
+		}
+	}
+	.github {
+		text-align: center;
+	}
+}

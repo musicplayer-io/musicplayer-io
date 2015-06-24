@@ -1,14 +1,20 @@
 ---
 title: Streaming Music Players for the Web
-image: /img/bg.jpg
 ---
 
-@ redditmusicplayer
+@ jumbo
 ---
-title: Music Player for Reddit
-app: redditmusicplayer
-url: http://reddit.musicplayer.io/
+image: /img/bg.jpg
 ---
-A free and open-source streaming music web player using data from Reddit.
+free <br/>
+<span class="andopen">and open-source</span> <br/>
+<span class="music">music player</span>
+
+@ end
+
+@ reddit
+---
+url: https://reddit.musicplayer.io/
+---
 
 @ end

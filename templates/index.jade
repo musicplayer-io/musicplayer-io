@@ -1,14 +1,22 @@
 extend layout
 
 block content
-  .ui.container.columns.center.middle.full.dark#container
-    +background-gradient-image("container", $.image)
-    mixin app(obj)
-      a.content.center.aligned(href=obj.meta.url)
-        .ui.text.larger.light #{obj.meta.title}
-        .ui.text.light !{obj.html}
-        hr.dashed.light
-        +stars(markade.apps[obj.meta.app])
+  .jumbo#jumbo
+    +background-gradient-image("jumbo", $$.jumbo.meta.image)
+    .contain
+      | !{$$.jumbo.html}
 
+  .reddit
+    .contain
+      a.title(href=$$.reddit.meta.url)
+        span Music
+        |  Player 
+        span  for 
+        | Reddit
+      .github
+        +stars(markade.apps.redditmusicplayer)
+        +watch(markade.apps.redditmusicplayer)
+        +fork(markade.apps.redditmusicplayer)
 
-    +app($$.redditmusicplayer)
+      .ui.divider
+      

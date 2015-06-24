@@ -1,0 +1,14 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+@fontPath  : '/fonts';
+
+@headerFont        : 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont          : 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@fontSmoothing     : antialiased;
+
+@importGoogleFonts : true;
+@googleFontName    : 'Raleway';
+@googleFontSizes   : '400,100,200,300,500,600,700,800,900';
+@googleSubset      : 'latin';

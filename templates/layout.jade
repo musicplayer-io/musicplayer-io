@@ -6,8 +6,26 @@ html
     meta(http-equiv="content-type", content="text/html; charset=UTF-8")
     meta(name="description", content=$.description)
     meta(name="keywords", content=$.keywords)
-    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0")
     include _includes/_favicon
     link(rel="stylesheet", href="/css/style.css", type="text/css")
-  body
-    block content
+  body#body
+    .ui.menu.top.fixed.inverted
+      .contain
+        .left.menu
+          a.item(href="/")
+            i.icon.music
+            | Music Player
+        .right.menu
+          a.item.icon(href="https://twitter.com/musicplayer_io", target="_blank")
+            i.icon.twitter
+          a.item.icon(href="https://facebook.com/musicplayer.io", target="_blank")
+            i.icon.facebook
+          a.item.icon(href="https://github.com/musicplayer-io/", target="_blank")
+            i.icon.github.alternate
+          a.item.icon(href="https://www.reddit.com/r/musicplayer", target="_blank")
+            i.icon.reddit
+          a.item.icon(href="/donate.html")
+            i.icon.gift
+    .wrap
+      block content
