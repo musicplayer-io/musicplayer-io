@@ -1,12 +1,7 @@
 extend layout
 
 block content
-  .jumbo#jumbo
-    +background-gradient-image("jumbo", $$.jumbo.meta.image)
-    .contain
-      | !{$$.jumbo.html}
-
-  .reddit
+  .reddit.jumbo
     .contain
       a.title(href=$$.reddit.meta.url)
         span Music
@@ -19,4 +14,25 @@ block content
         +fork(markade.apps.redditmusicplayer)
 
       .ui.divider
-      a.ui.button(href=$$.reddit.meta.url).blue.fluid= $$.reddit.meta.try
+      a.ui.button(href=$$.reddit.meta.url).blue.fluid= $$.reddit.meta.text
+
+  .dark.block
+    .contain
+      +quote($$.quoteone.meta)
+      
+  .block
+    .contain
+      h1 #{$$.subs.meta.title}
+      .content !{$$.subs.html}
+  
+  .block.dark
+    .contain
+      +quote($$.quotetwo.meta)
+
+  .block
+    .contain
+      +quote($$.quotethree.meta)
+      
+  .dark.block
+    .contain
+      +quote($$.quotefour.meta)

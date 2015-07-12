@@ -25,3 +25,11 @@ mixin background-gradient-image(id, url)
 			-moz-background-size: cover;
 			-webkit-background-size: cover;
 		}
+		
+mixin quote(obj)
+	blockquote
+		p #{obj.text}
+		if obj.url
+			cite: a(href=obj.url) #{obj.author}
+		else
+			cite #{obj.author}

@@ -1,6 +1,7 @@
 & { @import 'src/definitions/globals/site'; }
 & { @import 'src/definitions/globals/reset'; }
 & { @import 'src/definitions/collections/menu'; }
+& { @import 'src/definitions/collections/grid'; }
 & { @import 'src/definitions/elements/icon'; }
 & { @import 'src/definitions/elements/divider'; }
 & { @import 'src/definitions/elements/button'; }
@@ -21,7 +22,7 @@
 	color: white;
 	text-align: center;
 
-	p {
+	p, .donate {
 		font-size: 67px;
 		text-align: center;
 		margin: 0;
@@ -71,5 +72,38 @@
 	}
 	.github {
 		text-align: center;
+	}
+}
+
+.block {
+	&.dark {
+		background: rgba(0,0,0,.9);
+		color: rgba(255, 255, 255, .9);
+	}
+	.contain {
+		padding: 100px 0;
+	}
+	text-align: center;
+	h1 {
+		font-size: 2em;
+		font-weight: 500;
+	}
+	.content {
+		font-size: 16px;
+	}
+	blockquote {
+		a {
+			color: inherit;
+		}
+		p {
+			font-size: 2em;
+			font-weight: 300;
+			&:before {
+				content: "“";
+			}
+			&:after {
+				content: "”";
+			}
+		}
 	}
 }
