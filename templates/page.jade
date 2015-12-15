@@ -1,0 +1,18 @@
+extend layout
+
+block content
+  .reddit.jumbo
+    .contain
+      .title= $$.jumbo.meta.title
+      if $$.jumbo.meta.subtitle
+        .sub.title= $$.jumbo.meta.subtitle
+      != $$.jumbo.html
+
+  each block, key in $$
+    if (key != 'normal' && key != 'jumbo')
+      a(id=key)
+      .block(class=block.meta ? block.meta.css : "")
+        .contain
+          if block.meta && block.meta.title
+            h1.title= block.meta.title
+          .content!= block.html

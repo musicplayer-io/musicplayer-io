@@ -1,38 +1,43 @@
 extend layout
 
+mixin browser(url, alt)
+  .browser
+    .header
+      .btn.close
+      .btn.min
+      .btn.max
+    .content
+      img(src=url, alt=alt)
+
 block content
   .reddit.jumbo
     .contain
-      a.title(href=$$.reddit.meta.url)
-        span Music
-        |  Player 
-        span  for 
-        | Reddit
-      .github
-        +stars(markade.apps.redditmusicplayer)
-        +watch(markade.apps.redditmusicplayer)
-        +fork(markade.apps.redditmusicplayer)
-
-      .ui.divider
-      a.ui.button(href=$$.reddit.meta.url).blue.fluid= $$.reddit.meta.text
-
-  .dark.block
-    .contain
-      +quote($$.quoteone.meta)
+      .title
+        span a free and open-source
+        br
+        | music player for reddit
+      a.button(href=$$.reddit.meta.url)= $$.reddit.meta.text
+    
+    .screenshots.one
+      +browser("/img/app.jpg", "app")
+        
       
-  .block
-    .contain
-      h1 #{$$.subs.meta.title}
-      .content !{$$.subs.html}
-  
   .block.dark
     .contain
-      +quote($$.quotetwo.meta)
-
+      h1.title= $$.subs.meta.title
+      .content!= $$.subs.html
+      
   .block
     .contain
-      +quote($$.quotethree.meta)
+      h1.title= $$.community.meta.title
+      .content!= $$.community.html
       
-  .dark.block
+  .block.dark
     .contain
-      +quote($$.quotefour.meta)
+      h1.title= $$.new.meta.title
+      .content!= $$.new.html
+      
+  .block
+    .contain
+      h1.title= $$.quotes.meta.title
+      .content!= $$.quotes.html

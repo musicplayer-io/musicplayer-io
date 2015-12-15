@@ -1,8 +1,7 @@
 doctype html
 html
   head(lang="en")
-    include _includes/_mixins
-    title #{$.title} | #{markade.name}
+    title #{$.title} • #{markade.name}
     meta(http-equiv="content-type", content="text/html; charset=UTF-8")
     meta(name="description", content=$.description)
     meta(name="keywords", content=$.keywords)
@@ -10,29 +9,17 @@ html
     include _includes/_favicon
     link(rel="stylesheet", href="/css/style.css", type="text/css")
   body#body
-    .ui.menu.top.fixed.inverted
+    block content
+    .block.small.dark
       .contain
-        .left.menu
-          a.item(href="/")
-            i.icon.music
-            | Music Player
-        .right.menu
-          a.item.pop.icon(href="https://twitter.com/musicplayer_io", target="_blank", title="Follow @musicplayer_io")
-            i.icon.twitter
-          a.item.pop.icon(href="https://facebook.com/musicplayer.io", target="_blank", title="Follow on Twitter")
-            i.icon.facebook
-          a.item.pop.icon(href="https://github.com/musicplayer-io/", target="_blank", title="Source Code")
-            i.icon.github.alternate
-          a.item.pop.icon(href="https://www.reddit.com/r/musicplayer", target="_blank", title="/r/musicplayer on Reddit")
-            i.icon.reddit
-          a.item.pop.icon(href="/donate.html", title="Donations")
-            i.icon.gift
-    .wrap
-      block content
-
-    script(src="http://code.jquery.com/jquery-1.11.3.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.12.3/semantic.min.js")
-    script.
-      $(document).ready(function() {
-        $(".pop.item").popup();
-      });
+        .content
+          p Listen to amazing music for <strong>free</strong>.
+          ul
+            li: a(href="/") Home
+            li: a(href="/faq.html") FAQ
+            li: a(href="/donate.html") Donate
+            li: a(href="/privacy.html") Privacy
+            li: a(href="https://github.com/musicplayer-io") Contribute
+            li: a(href="https://twitter.com/musicplayer_io") Twitter
+            li: a(href="https://facebook.com/musicplayer.io") Facebook
+            li: a(href="https://www.reddit.com/r/musicplayer") Reddit

@@ -1,7 +1,7 @@
 ---
-title: Streaming Music Players for the Web
-description: A free and open-source music player for the web.
-keywords: free, open source, music, player, web
+title: Music Player for Reddit
+description: A free and open-source music player for Reddit. Plays music from subreddits in one player.
+keywords: free, open source, music, player, web, reddit
 ---
 
 @ reddit
@@ -11,48 +11,46 @@ text: Play Music
 ---
 @ end
 
-
-@ quoteone
----
-text: It’s pretty amazing that some guy on reddit just built this for a laugh.
-tweet: https://twitter.com/DanielPCarey/status/612963784865542144
-author: "@DanielPCarey"
-url: https://twitter.com/DanielPCarey/status/612963784865542144
----
-@ end
-
 @ subs
 ---
-title: Music For Everyone
+title: 280+ ways to enjoy music
 ---
-With over 280 subreddits there is enough to keep you browsing all day long.
-Anything from classical communities to anything metal to electronic.
+With over 280+ subreddits in all kinds of genres, there is enough to keep you
+interested and to discover upcoming artists and to keep up with the mainstream
+ones.
 @ end
 
-@ quotetwo
+@ community
 ---
-text: Probably one of the best sites I've found this year.
-author: "/u/dalecarlian"
+title: Community Driven
 ---
+The great thing about Reddit is its diverse community. There is a community
+for virtually everything, with music submitted by the users for the users.
+The good music gets upvoted to the top and the trash is downvoted to oblivion.
+You can discuss tracks with music aficionados just like you.
 @ end
 
-@ quotethree
+@ new
 ---
-text: Quality stuff. I've already found a few things I like on the front page which I wouldn't normally hear.
-author: "/u/topright"
+title: New Music Every day
 ---
+Don't get bored with the same playlists and artists every day. Each time you come
+back you'll find new beats to keep you going. You can also discover the greatest
+tracks of this day, week, month or all time.
 @ end
 
-@ quotefour
+@ quotes
 ---
-text: I just deleted my Spotify account.
+title: What people say
 ---
-@ end
+> Probably one of the best sites I've found this year.
 
-@ asseenon
----
-tnw: http://thenextweb.com/insider/2015/06/24/reddit-music-player-turns-subreddit-recommendations-into-playlists/
-producthunt: https://www.producthunt.com/tech/music-player-for-reddit
+> Quality stuff. I've already found a few things I like on the front page which I wouldn't normally hear.
 
----
+> I just deleted my Spotify account
+
+***
+
+* [The Next Web](http://thenextweb.com/insider/2015/06/24/reddit-music-player-turns-subreddit-recommendations-into-playlists/)
+* [Product Hunt](https://www.producthunt.com/tech/music-player-for-reddit)
 @ end

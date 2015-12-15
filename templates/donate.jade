@@ -1,9 +1,0 @@
-extend layout
-
-block content
-  .jumbo#jumbo
-    +background-gradient-image("jumbo", $$.jumbo.meta.image)
-    .contain
-      .donate !{$$.jumbo.html}
-      .ui.divider.inverted
-      | !{$$.donate.html}
