@@ -2,7 +2,7 @@
 title: FAQ
 description: Frequently Asked Questions about the Music Player for Reddit
 keywords: faq, questions, help, free, open source, music, player, web
-template: page.jade
+template: page.pug
 ---
 
 

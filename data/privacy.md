@@ -2,7 +2,7 @@
 title: Privacy Policy
 description: Privacy Policy & Cookie Policy
 keywords: policy, privacy, cookie, free, open source, music, player, web
-template: page.jade
+template: page.pug
 ---
 
 
