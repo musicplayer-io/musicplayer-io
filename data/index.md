@@ -51,6 +51,5 @@ title: What people say
 
 ***
 
-* [The Next Web](http://thenextweb.com/insider/2015/06/24/reddit-music-player-turns-subreddit-recommendations-into-playlists/)
-* [Product Hunt](https://www.producthunt.com/tech/music-player-for-reddit)
+* [Music Player for Reddit - The Story](https://il.ly/journal/music-player-reddit-front-page)
 @ end

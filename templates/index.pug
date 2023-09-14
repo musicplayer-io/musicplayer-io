@@ -12,7 +12,7 @@ mixin browser(url, alt)
 block content
   .reddit.jumbo
     .contain
-      .title
+      h1.title
         span a free and open-source
         br
         | music player for reddit
@@ -24,20 +24,20 @@ block content
       
   .block.dark
     .contain
-      h1.title= $$.subs.meta.title
+      h2.title= $$.subs.meta.title
       .content!= $$.subs.html
       
   .block
     .contain
-      h1.title= $$.community.meta.title
+      h2.title= $$.community.meta.title
       .content!= $$.community.html
       
   .block.dark
     .contain
-      h1.title= $$.new.meta.title
+      h2.title= $$.new.meta.title
       .content!= $$.new.html
       
   .block
     .contain
-      h1.title= $$.quotes.meta.title
+      h2.title= $$.quotes.meta.title
       .content!= $$.quotes.html
