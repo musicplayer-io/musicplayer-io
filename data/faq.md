@@ -35,11 +35,6 @@ You can now disable this feature on Chrome here:
 1. Copy paste this in your address bar: `chrome://flags/#disable-gesture-requirement-for-media-playback`
 2. Click on *Enable*
 
-### More
-
-* [Google+ Announcement](https://plus.google.com/+FrancoisBeaufort/posts/6PiJQqJzGqX)
-* [Code Review on Chromium](https://codereview.chromium.org/1292433002/)
-* [Article on OMG!Chrome!](http://www.omgchrome.com/chrome-no-longer-autoplay-video-background-tabs/)
 @ end
 
 @ shortcut
@@ -62,5 +57,5 @@ css: dark
 ---
 This is not possible without an extension, Streamkeys is a good extension for Chrome.
 
-* [Streamkeys](http://streamkeys.com/)
+* Streamkeys
 @ end
