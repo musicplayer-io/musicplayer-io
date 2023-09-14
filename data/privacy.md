@@ -87,8 +87,6 @@ To help protect your privacy, be sure:
 1. to take customary precautions to guard against “malware” (viruses, Trojan horses, bots, etc.), for example by installing and updating suitable anti-virus software.
 1. to use a browser plugin or extension that protects your privacy, see the Electronic Frontier Foundation's Surveillance Self-Defense Starter Pack
 
-
-* [Surveillance Self-Defense](https://ssd.eff.org/en)
 @ end
 
 @ children
